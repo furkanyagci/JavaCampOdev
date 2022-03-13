@@ -1,0 +1,15 @@
+package staticDemo;
+
+public class ProductValidator {
+	
+	public static boolean isValid(Product product) {/*Static uygulama duruncaya kadar bellekte durur. new lersek iþlem bitince 
+	bellekten atýlýr. Manager sýnýflarý static yapýlaz çünkü static olduðu gibi durur ve herkez onu kullanýr. Validator gibi
+	yardýmcý sýnýflar yapýalabilir.*/
+		if (product.price>0 && !product.name.isEmpty()) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+	
+}

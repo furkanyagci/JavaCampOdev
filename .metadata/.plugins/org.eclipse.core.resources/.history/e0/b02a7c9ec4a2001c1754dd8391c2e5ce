@@ -1,0 +1,9 @@
+package entities.Concrete;
+
+import entities.Abstract.Entity;
+
+public class User implements Entity {
+	void add(Product product);
+	void update(Product product);
+	void delete(Product product);
+}

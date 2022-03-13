@@ -1,0 +1,20 @@
+package staticDemo;
+
+public class DatabaseHelper {
+	public static class Crud{
+		
+		public static class Delete{
+			
+		}
+		
+		public static class Update{
+			
+		}
+	}
+	//Static class bu þekilde kullanalar var
+	public static class Connection{
+		public static void createConnection() {
+			
+		}
+	}
+}

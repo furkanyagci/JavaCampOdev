@@ -1,0 +1,13 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		Student studens = new Student() {1,"Furkan", "Yağcı", ""12345678910 };
+		
+		
+		UserManager user = new StudentManager();
+		user.add(null);
+		
+	}
+
+}

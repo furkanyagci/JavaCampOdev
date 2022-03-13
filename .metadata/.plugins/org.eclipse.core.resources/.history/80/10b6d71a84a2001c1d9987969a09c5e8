@@ -1,0 +1,17 @@
+package interfaceAbstractDemo.Concretes;
+
+import interfaceAbstractDemo.Abstract.BaseCustomerManager;
+import interfaceAbstractDemo.Entities.Customer;
+
+public class StarbucksCustomerManager extends BaseCustomerManager{
+	@Override
+	public void save(Customer customer) {
+		
+		CheckIfRealPerson(customer ){
+			
+		}
+		
+		System.out.println("Saved to db : " + customer.firstName);
+	}
+
+}

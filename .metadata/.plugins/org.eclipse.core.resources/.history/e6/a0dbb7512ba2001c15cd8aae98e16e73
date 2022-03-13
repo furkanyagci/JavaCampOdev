@@ -1,0 +1,17 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		Student student = new Student();
+		student.id=1;
+		student.firstName="Furkan";
+		student.lastName="Yağcı";
+		student.nationalyId="12345678910";
+		student.coursesId=new int[] {1,2,3};
+		
+		UserManager user = new StudentManager();
+		user.add(null);
+		
+	}
+
+}

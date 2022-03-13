@@ -1,0 +1,25 @@
+package interfaceAbstractDemo;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+import interfaceAbstractDemo.Abstract.BaseCustomerManager;
+import interfaceAbstractDemo.Concretes.NeroCustomerManager;
+import interfaceAbstractDemo.Entities.Customer;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Customer customer= new Customer();
+		customer.id=1;
+		customer.firstName="Engin";
+		customer.lastName="Demiroð";
+		customer.dateOfBirth = LocalDate.parse("1986-1-6");
+		
+		BaseCustomerManager customerManager = new NeroCustomerManager();
+		customerManager.save(customer);
+		
+	}
+
+}

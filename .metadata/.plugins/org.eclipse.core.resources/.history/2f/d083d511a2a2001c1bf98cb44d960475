@@ -1,0 +1,7 @@
+package Concretes;
+
+public class CampaignManager {
+	public void add(Campaign campaign) {
+		System.out.println("Kampanya eklendi : " +  );
+	}
+}

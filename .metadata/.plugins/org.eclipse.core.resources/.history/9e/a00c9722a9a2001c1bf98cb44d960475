@@ -1,0 +1,19 @@
+package Concretes;
+
+import Abstracts.SalesService;
+import Entities.Campaign;
+import Entities.Sales;
+
+public class SalesManager implements SalesService{
+	public void add(Sales sales) {
+		System.out.println("Kampanya eklendi : " +  sales.getName());
+	}
+	
+	public void remove(Campaign campaign) {
+		System.out.println("Kampanya silindi : " +  campaign.getName());
+	}
+	
+	public void update(Campaign campaign) {
+		System.out.println("Kampanya güncellendi : " +  campaign.getName());
+	}
+}

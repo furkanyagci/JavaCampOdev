@@ -1,0 +1,14 @@
+package interfaces;
+
+public class OracleCustomerDao extends OracleCustomerDao implements CustomerDao, Repository{//
+	/* Class'lar birden fazla interface'i implemente edebilir.
+	 * Class'lar sadece bir tana Class'ý extends edebilir.
+	 * Bir class extends edilecekse implements den önce yazýlýr. yukarýda bunu örneklemek için yazdýk extenss OracleCustomerDao'yu 
+	  */
+
+	@Override
+	public void add() {
+		System.out.println("Oracle ile eklendi");
+	}
+
+}

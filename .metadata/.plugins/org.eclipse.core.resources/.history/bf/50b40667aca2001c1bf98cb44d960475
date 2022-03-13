@@ -1,0 +1,7 @@
+package Abstracts;
+
+import Entities.Gamer;
+
+public interface GamerCheckService {
+	static boolean isValid(Gamer gamer);
+}

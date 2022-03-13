@@ -1,0 +1,14 @@
+package core.Concrete;
+
+import core.Abstract.VerificationService;
+import gmailVerificationService.GmailVerificationManager;
+
+public class GmailVerificationManagerAdapter implements VerificationService{
+
+	@Override
+	public boolean emailVerificationSystem() {
+		GmailVerificationManager gmailVerificationManager = new GmailVerificationManagerAdapter();
+		return false;
+	}
+
+}

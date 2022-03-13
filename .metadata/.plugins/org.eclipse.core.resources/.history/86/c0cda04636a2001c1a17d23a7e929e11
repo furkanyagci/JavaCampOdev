@@ -1,0 +1,9 @@
+
+public abstract class GameCalculator {//Bir sýnýfýn abstract olabilmesi için abstract imzasýyla beslenmesi gerekiyor buradaki gibi
+	public abstract void hesapla();//Bu metot zorunlu import edilecek ve herkez metodu kendisine göre yazacak abstract o iþe yarýyor
+	
+	public final void gameOver() {//final yazarsak bu metot diðer class'larda override edilemez
+		System.out.println("Oyun bitti");
+	}
+}
+/*abstract bir sýnýfta abstract metot olmak zorunda deðil*/

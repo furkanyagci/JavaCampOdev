@@ -1,0 +1,5 @@
+package interfaceDemo;
+//Dýþ kaynak çalýþan
+public class OutSourceWorker implements Workable{
+
+}

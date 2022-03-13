@@ -1,0 +1,6 @@
+
+public class StudentManager extends UserManager{
+	public List<Student> getAll() {
+		return Student;
+	}
+}

@@ -1,0 +1,8 @@
+
+public abstract class GameCalculator {
+	public abstract void hesapla();//Bu metot zorunlu import edilecek ve herkez metodu kendisine göre yazacak
+	
+	public final void gameOver() {//final yazarsak bu metot diðer class'larda override edilemez
+		System.out.println("Oyun bitti");
+	}
+}

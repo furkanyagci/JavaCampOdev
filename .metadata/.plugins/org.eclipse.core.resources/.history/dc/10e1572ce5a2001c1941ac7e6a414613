@@ -1,0 +1,18 @@
+package core.Concrete;
+
+import core.Abstract.LoggerService;
+
+public class EmailLoggerManager implements LoggerService{
+
+	@Override
+	public void log(String message) {
+		System.out.println(message);
+	}
+
+	@Override
+	public boolean emailVerification(String email) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

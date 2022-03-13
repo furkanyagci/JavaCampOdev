@@ -1,0 +1,6 @@
+package dataAcces.Concrete;
+
+impor Abstract.UserDao
+public class UserDao implements dataAcces.{
+
+}

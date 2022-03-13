@@ -1,0 +1,11 @@
+package interfaces;
+
+public class OracleCustomerDao implements CustomerDao{
+
+	@Override
+	public void add() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

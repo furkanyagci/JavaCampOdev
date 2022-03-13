@@ -1,0 +1,7 @@
+package core.Abstract;
+
+public interface LoggerService {
+	public interface Logger {
+		void log(String message);
+	}
+}

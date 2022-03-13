@@ -1,0 +1,5 @@
+package entities.Concrete;
+
+public class User implements Entity {
+
+}

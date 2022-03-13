@@ -1,0 +1,7 @@
+package core.Concrete;
+
+import core.Abstract.VerificationService;
+
+public class GmailVerificationManagerAdapter implements VerificationService{
+
+}

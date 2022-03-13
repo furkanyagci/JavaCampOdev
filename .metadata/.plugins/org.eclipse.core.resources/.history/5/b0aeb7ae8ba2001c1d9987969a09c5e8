@@ -1,0 +1,17 @@
+package interfaceAbstractDemo.Concretes;
+
+import interfaceAbstractDemo.Abstract.CustomerCheckService;
+import interfaceAbstractDemo.Entities.Customer;
+
+public class CustomerCheckManager implements CustomerCheckService{/*Þuan sadece Starbucks istiyor mernisi ama yarýn Nero firmasýda 
+Mernis sorgulamasý isteyebilir o yüzden CustomerCheckManager class'ýný yazdýk. */
+
+	@Override
+	public boolean CheckIfRealPerson(Customer customer) {
+		
+		tr.gov.nvi.tckimlik.WS.KPSPublicSoap client
+		
+		return true;
+	}
+
+}

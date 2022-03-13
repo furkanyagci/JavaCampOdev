@@ -1,0 +1,8 @@
+package interfaces;
+
+public class CustomerManager {
+	public void add() {
+		// iþ kodlarý. Müþteri adý girilmiþmi, tc doðrumu bunlar burada yazýlýr.
+		
+	}
+}

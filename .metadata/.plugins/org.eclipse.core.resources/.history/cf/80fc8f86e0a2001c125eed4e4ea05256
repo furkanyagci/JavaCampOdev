@@ -1,0 +1,22 @@
+package gmailVerificationService;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class GmailVerificationManager {
+	public boolean verificationGmail(String gmail) {
+		if(gmail.length()>14) {
+	
+			Pattern pattern = Pattern.compile(".@gmail.com");//nokta öncesi ne olursa olsun demek. Gelen veri içinde aranacak deðeri pattern nesnesi tutacak
+			Matcher matcher = pattern.matcher(gmail);//Bulmak için Matcher(karþýlaþtýrýcý) kullanýyoruz.
+			if (matcher.find()) {
+				return true;
+			}else {
+				return false;
+			}
+			
+		}else {
+			return false
+		}
+	}
+}

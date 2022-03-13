@@ -1,0 +1,7 @@
+package overriding;
+
+public class OgrenciKrediManager extends BaseKrediManager{
+	public double hesapla(double tutar) {//Burada hesapla metodunu ezdik.C# da virtual metotlarla yapılır.
+		return tutar * 1.10;
+	}
+}

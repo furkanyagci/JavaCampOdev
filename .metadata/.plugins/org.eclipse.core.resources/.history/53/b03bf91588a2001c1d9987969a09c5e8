@@ -1,0 +1,26 @@
+package interfaceAbstractDemo;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+import interfaceAbstractDemo.Abstract.BaseCustomerManager;
+import interfaceAbstractDemo.Concretes.NeroCustomerManager;
+import interfaceAbstractDemo.Concretes.StarbucksCustomerManager;
+import interfaceAbstractDemo.Entities.Customer;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Customer customer= new Customer();
+		customer.id=1;
+		customer.firstName="Engin";
+		customer.lastName="Demiroð";
+		customer.dateOfBirth = LocalDate.parse("1986-01-06");
+		//System.out.println(customer.dateOfBirth);
+		
+		BaseCustomerManager customerManager = new StarbucksCustomerManager(new CustomerCheckManager());
+		customerManager.save(customer);
+	}
+
+}

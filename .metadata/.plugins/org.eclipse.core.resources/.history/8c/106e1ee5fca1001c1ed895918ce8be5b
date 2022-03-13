@@ -1,0 +1,16 @@
+package reCapDemoClasses;
+
+public class DortIslem {
+	public void Topla(int sayi1, int sayi2) {
+		return sayi1 + sayi2;
+	}
+	public void Cikar(int sayi1, int sayi2) {
+		return sayi1 - sayi2;
+	}
+	public void Carp(int sayi1, int sayi2) {
+		return sayi1 * sayi2;
+	}
+	public void Topla(int sayi1, int sayi2) {
+		return sayi1 / sayi2;
+	}
+}

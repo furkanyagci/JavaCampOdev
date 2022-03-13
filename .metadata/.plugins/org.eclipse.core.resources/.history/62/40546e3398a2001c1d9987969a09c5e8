@@ -1,0 +1,6 @@
+
+public class Campaign {
+	int id;
+	String name;
+	String description;
+}

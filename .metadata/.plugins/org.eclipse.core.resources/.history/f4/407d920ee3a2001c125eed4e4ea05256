@@ -1,0 +1,19 @@
+package core.Concrete;
+
+import java.util.Scanner;
+
+import core.Abstract.LoggerService;
+
+public class EmailLogger implements LoggerService{
+
+	@Override
+	public void log(String message) {
+		System.out.println(message);
+	}
+	
+	public boolean emailVerification(String email) {
+		Scanner s = new Scanner(System.in);
+		System.out.print("Sisteme kaydýnýz tamamlanmak üzere onaylamk için 1 yazýn : ");
+		String userName = s.nextLine();
+	}
+}

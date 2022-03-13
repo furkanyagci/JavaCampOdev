@@ -1,0 +1,9 @@
+
+public class Game {
+	int id;
+	String firstName;
+	String lastName;
+	String birthOfDay;
+	String description;
+	double unitPrice;
+}

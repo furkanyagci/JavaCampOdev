@@ -1,0 +1,25 @@
+package Concretes;
+
+import Abstracts.GameService;
+import Entities.Game;
+
+public class GameManager implements GameService{
+
+	@Override
+	public void add(Game game) {
+		System.out.println("Oyuncu eklendi : " +  gamer.getFirstName() + " " + gamer.getLastName());
+	}
+
+	@Override
+	public void remove(Game gamer) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void update(Game gamer) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

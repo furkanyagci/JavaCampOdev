@@ -1,0 +1,7 @@
+
+public class Sales {
+	private int id;
+	private int gameid;
+	private int gamerid;
+	private double gamePrice;
+}

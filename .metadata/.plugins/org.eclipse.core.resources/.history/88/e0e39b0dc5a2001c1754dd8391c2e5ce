@@ -1,0 +1,5 @@
+package dataAcces.Abstract;
+
+public interface UserDao {
+	private 
+}

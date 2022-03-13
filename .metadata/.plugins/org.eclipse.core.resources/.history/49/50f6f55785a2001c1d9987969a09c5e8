@@ -1,0 +1,5 @@
+package interfaceAbstractDemo.Abstract;
+
+public interface CustomerCheckService {//Yarýn Nero firmasýda Mernis sorgulamasý isteyebilir o yüzden buraya yazdýk
+	boolean CheckIfRealPerson(Customer customer)
+}

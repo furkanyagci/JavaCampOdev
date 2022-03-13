@@ -1,0 +1,10 @@
+import Concretes.CampaignManager;
+
+public class Main {
+
+	public static void main(String[] args) {
+		CampaignManager campaignManager = new CampaignManager();
+		campaignManager.add(new Campaign());
+	}
+
+}

@@ -1,0 +1,11 @@
+package interfaces;
+
+public class CustomerManager {
+	
+	CsutomerDao customerDao;
+	
+	public void add() {
+		// iþ kodlarý. Müþteri adý girilmiþmi, tc doðrumu bunlar burada yazýlýr.
+		
+	}
+}

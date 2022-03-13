@@ -1,0 +1,19 @@
+package Concretes;
+
+import Abstracts.SalesService;
+import Entities.Campaign;
+import Entities.Sales;
+
+public class SalesManager implements SalesService{
+	public void add(Sales sales) {
+		System.out.println("Satýþ eklendi Oyuncu id : " +  sales.getGameid());
+	}
+	
+	public void remove(Sales sales) {
+		System.out.println("Kampanya silindi : ");
+	}
+	
+	public void update(Sales sales) {
+		System.out.println("Kampanya güncellendi : " +  campaign.getName());
+	}
+}

@@ -1,0 +1,18 @@
+package api;
+
+import business.Concrete.UserManager;
+import dataAccess.Concrete.UserDao;
+import entities.Concrete.User;
+
+public class Main {
+
+	public static void main(String[] args) {
+		User user1 = new User(1, "Furkan", "Yaðcý", "furkanyagci@gmail.com","123456");
+		UserManager userManager = new UserManager(new UserDao());
+		userManager.add(user1);
+		for (User user : userManager.getAll()) {
+			System.out.println(user.getFirstName() + " " + user.getLastName() + " " + user.getEmail() + " " + user.getPassword());
+		}
+	}
+
+}

@@ -1,0 +1,17 @@
+package polymorphismDemo;
+
+public class CustomerManager {
+	
+	private BaseLogger baseLogger;
+	
+	public CustomerManager(BaseLogger logger) {
+		thisbaseLogger=logger;
+	}
+	
+	public void add() {
+		System.out.println("Müþteri eklendi");
+		DataBaseLogger dataBaseLogger = new DataBaseLogger();/*new leyerek kullanmak kötü kullanýmdýr. 
+		Baðýmlýlýk oluþturur. Bunun yerine yapýcý metot da yaptýðýmýzý yaparsak gevçek baðlý olur daha iyidr */
+		dataBaseLogger.log("Log mesaj");
+	}
+}

@@ -1,0 +1,12 @@
+package entities.Concrete;
+
+import entities.Abstract.Entity;
+
+public class User implements Entity {
+	private int id;
+	private String firstName;
+	private String lastName;
+	private String email;
+	private String parola;
+	
+}

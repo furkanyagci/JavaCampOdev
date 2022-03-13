@@ -1,0 +1,19 @@
+package interfaceAbstractDemo.Adapter;
+
+import interfaceAbstractDemo.Abstract.CustomerCheckService;
+import interfaceAbstractDemo.Entities.Customer;
+import tr.gov.nvi.tckimlik.WS.KPSPublicSoapProxy;
+
+public class MernisServisAdapter implements CustomerCheckService {
+
+	@Override
+	public boolean CheckIfRealPerson(Customer customer) {
+		
+		tr.gov.nvi.tckimlik.WS.KPSPublicSoapProxy client = new KPSPublicSoapProxy() {
+			
+		}
+		
+		return false;
+	}
+	
+}

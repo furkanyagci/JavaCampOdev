@@ -1,0 +1,5 @@
+package core.Concrete;
+
+public class EmailLogger implements LoggerService{
+
+}

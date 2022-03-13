@@ -1,0 +1,6 @@
+
+public class UserManager {
+	public void add(UserManager userManger) {
+		System.out.println();
+	}
+}

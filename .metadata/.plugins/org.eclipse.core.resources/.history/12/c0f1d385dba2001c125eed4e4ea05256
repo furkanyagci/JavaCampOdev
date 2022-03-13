@@ -1,0 +1,5 @@
+package gmailVerificationService;
+
+public class GmailVerificationManager {
+
+}

@@ -1,0 +1,18 @@
+package Concretes;
+
+import Abstract.Entity;
+import Entities.Campaign;
+
+public class BaseManager {
+	public void add(Entity entity) {
+		System.out.println("Kampanya eklendi : " +  campaign.getName());
+	}
+	
+	public void remove(Entity entity) {
+		System.out.println("Kampanya silindi : " +  campaign.getName());
+	}
+	
+	public void update(Entity entity) {
+		System.out.println("Kampanya güncellendi : " +  campaign.getName());
+	}
+}

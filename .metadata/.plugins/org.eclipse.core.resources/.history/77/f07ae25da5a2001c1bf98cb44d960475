@@ -1,0 +1,11 @@
+package Abstracts;
+
+import Entities.Campaign;
+
+public interface BaseManager {
+	public void add(Entity entity);
+	
+	public void remove(Campaign campaign);
+	
+	public void update(Campaign campaign);
+}

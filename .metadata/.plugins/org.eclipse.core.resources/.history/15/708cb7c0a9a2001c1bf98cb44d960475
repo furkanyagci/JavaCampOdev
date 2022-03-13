@@ -1,0 +1,7 @@
+package Concretes;
+
+import Abstracts.GameService;
+
+public class GameManager implements GameService{
+
+}

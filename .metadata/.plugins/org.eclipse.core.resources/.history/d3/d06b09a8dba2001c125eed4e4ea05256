@@ -1,0 +1,18 @@
+package gmailVerificationService;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class GmailVerificationManager {
+	boolean verificationGmail(String gmail) {
+		
+		Pattern pattern = Pattern.compile(".@gmail.com");//nokta öncesi ne olursa olsun demek. Gelen veri içinde aranacak deðeri pattern nesnesi tutacak
+		Matcher matcher = pattern.matcher(email);//Bulmak için Matcher(karþýlaþtýrýcý) kullanýyoruz.
+		if (matcher.find()) {
+			return true;
+		}else {
+			System.out.println("Sisteme gmail ile üye olunabilir.");
+			return false;
+		}
+	}
+}

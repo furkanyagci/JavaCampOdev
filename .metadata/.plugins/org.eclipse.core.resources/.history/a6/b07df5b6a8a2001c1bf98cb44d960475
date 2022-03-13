@@ -1,0 +1,11 @@
+package Abstracts;
+
+import Entities.Gamer;
+
+public interface SalesService {
+public void add(Sales sales);
+	
+	public void remove(Sales gamer);
+	
+	public void update(Gamer gamer);
+}

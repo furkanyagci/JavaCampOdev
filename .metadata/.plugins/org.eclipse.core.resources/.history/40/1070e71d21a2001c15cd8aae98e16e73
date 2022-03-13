@@ -1,0 +1,16 @@
+package polymorphismDemo;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		EMailLogger logger= new EMailLogger();
+		logger.log("Log mesajý");
+		
+		BaseLogger[] loggers = new BaseLogger[] {new FileLogger(), new DataBaseLogger(), new EMailLogger()};
+		for (BaseLogger logger : loggers) {
+			
+		}
+	}
+
+}

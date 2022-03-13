@@ -1,0 +1,10 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class StudentManager extends UserManager{
+	List<Student> students = new ArrayList();
+	
+	public List<Student> getAll() {
+		return Student;
+	}
+}

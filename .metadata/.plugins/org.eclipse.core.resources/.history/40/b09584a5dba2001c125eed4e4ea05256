@@ -1,0 +1,7 @@
+package gmailVerificationService;
+
+public class GmailVerificationManager {
+	boolean verificationGmail(String gmail) {
+		
+	}
+}

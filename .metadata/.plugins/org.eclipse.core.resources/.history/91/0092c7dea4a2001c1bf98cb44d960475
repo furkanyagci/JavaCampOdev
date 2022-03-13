@@ -1,0 +1,13 @@
+package Abstracts;
+
+import Entities.Campaign;
+
+public class BaseManager {
+	public void add(Campaign campaign);
+	
+	public void remove(Campaign campaign)
+	
+	public void update(Campaign campaign) {
+		System.out.println("Kampanya güncellendi : " +  campaign.getName());
+	}
+}

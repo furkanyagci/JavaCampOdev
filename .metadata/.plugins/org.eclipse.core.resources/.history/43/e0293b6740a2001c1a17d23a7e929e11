@@ -1,0 +1,12 @@
+package staticDemo;
+
+public class DatabaseHelper {
+	public static class Crud{
+		public static class delete{
+			
+		}
+		public static class Crud{
+			
+		}
+	}
+}

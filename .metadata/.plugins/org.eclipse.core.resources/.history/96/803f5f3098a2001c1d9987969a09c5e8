@@ -1,0 +1,9 @@
+import java.time.LocalDate;
+
+public class Gamer {
+	int id;
+	String firstName;
+	String lastName;
+	LocalDate dateOfBirth;
+	String nationalityId;
+}

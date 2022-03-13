@@ -1,0 +1,22 @@
+package interfaceAbstractDemo;
+
+import java.time.LocalDateTime;
+
+import interfaceAbstractDemo.Abstract.BaseCustomerManager;
+import interfaceAbstractDemo.Concretes.NeroCustomerManager;
+import interfaceAbstractDemo.Entities.Customer;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Customer customer= new Customer();
+		customer.id=1;
+		customer.firstName="Engin";
+		customer.lastName="Demiroð";
+		customer.dateOfBirth = new LocalDateTime(13/03/2022 03:04:48);
+		
+		BaseCustomerManager customerManager = new NeroCustomerManager();
+		//customerManager.save(new Customer(){id=1, firstName="Engin", lastName="Demiroð", dateOfBirth = new LocalDateTime(1986,1,6), nationalityId="28861499108";});
+	}
+
+}

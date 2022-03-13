@@ -1,0 +1,114 @@
+package business.Concrete;
+
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import business.Abstract.UserService;
+import core.Abstract.LoggerService;
+import core.Concrete.GmailVerificationManagerAdapter;
+import dataAccess.Abstract.UserDao;
+import entities.Concrete.User;
+
+public class UserManager implements UserService{
+
+	private UserDao userDao;
+	private LoggerService loggers;
+	
+	public UserManager(UserDao userDao, LoggerService loggerService) {
+		this.userDao = userDao;
+		this.private Logger[] loggers; = loggerService;
+	}
+	
+	@Override
+	public void add(User user) {
+		//boolean result = gmailVerificationServiceControl(user.getEmail());
+		//System.out.println(result);
+		if(userInformationNotEmpty(user) && userInformationCharacterLength(user) && gmailFormatControl(user.getEmail()) &&gmailVerificationServiceControl(user.getEmail()) && userEmailRegistered(user)) {
+			if (condition) {
+				
+			} else {
+
+			}
+			this.userDao.add(user);
+		}
+		
+	}
+
+	@Override
+	public void delete(User user) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void update(User user) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public List<User> getAll(){
+		return userDao.getAll();
+	}
+	
+	boolean userInformationNotEmpty(User user) {
+		if (!user.getFirstName().isEmpty() && !user.getLastName().isEmpty() && !user.getEmail().isEmpty() && !user.getPassword().isEmpty()) {
+			return true;
+		}else {
+			System.out.println("Lütfen istenilen bilgileri giriniz.");
+			return false;
+		}
+	}
+	
+	boolean userInformationCharacterLength(User user) {
+		if (user.getPassword().length()>=6 && user.getFirstName().length() > 1 && user.getLastName().length() > 1) {
+			return true;
+		}else {
+			System.out.println("Ad ve soyad en az 2 karakter olmalý. Þifre en az 6 karakter olabilir.");
+			return false;
+		}
+	}
+	
+	boolean userEmailRegistered(User user) {
+		boolean emailControl = false;
+		
+		for (User userr : this.userDao.getAll()) {
+			if(userr.getEmail() == user.getEmail()) {
+				emailControl = true;
+			}
+		}
+		
+		if(emailControl) {
+			System.out.println("Bu E-mail ile daha kayýt olunmuþ");
+			return false;
+		}else {
+			return true;
+		}
+	}
+	
+	boolean gmailFormatControl(String email) {
+		
+		Pattern pattern = Pattern.compile(".@gmail.com");//nokta öncesi ne olursa olsun demek. Gelen veri içinde aranacak deðeri pattern nesnesi tutacak
+		Matcher matcher = pattern.matcher(email);//Bulmak için Matcher(karþýlaþtýrýcý) kullanýyoruz.
+		if (matcher.find()) {
+			return true;
+		}else {
+			System.out.println("Sisteme gmail ile üye olunabilir.");
+			return false;
+		}
+	}
+	
+	boolean gmailVerificationServiceControl(String email) {
+		GmailVerificationManagerAdapter gmailVerificationManagerAdapter = new GmailVerificationManagerAdapter();
+		boolean result = gmailVerificationManagerAdapter.emailVerificationSystem(email);
+		if (result) {
+			System.out.println("Gmail doðrulama baþarýlý");
+			return true;
+		} else {
+			System.out.println("Gmail doðrulama baþarýsýz ! ");
+			return false;
+		}
+	}
+	
+	
+}

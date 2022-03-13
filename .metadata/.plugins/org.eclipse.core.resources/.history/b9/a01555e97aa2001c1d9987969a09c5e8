@@ -1,0 +1,12 @@
+package interfaceAbstractDemo;
+
+import java.time.LocalDateTime;
+
+public class Customer {
+	int id;
+	String firstName;
+	String lastName;
+	LocalDateTime dateOfBirth;
+	String nationalityId;
+	
+}

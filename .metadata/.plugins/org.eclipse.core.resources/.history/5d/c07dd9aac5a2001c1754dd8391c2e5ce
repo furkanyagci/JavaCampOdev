@@ -1,0 +1,9 @@
+package dataAcces.Abstract;
+
+import entities.Concrete.User;
+
+public interface UserDao {
+	void add(User user);
+	void update(User user);
+	void delete(User user);
+}
